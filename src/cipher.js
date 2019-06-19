@@ -1,5 +1,6 @@
 window.cipher = {
   encode: (textCipher , offSets) => {
+    let ciphertransf ="";
     for(let i = 0; i < textCipher.length; i++) {
     //console.log (textCipher[i]);(posicion de las letras)
     let transformText= textCipher[i].charCodeAt();
@@ -12,9 +13,10 @@ window.cipher = {
     //console.log(ciphertransf);(rev)
     }
     return ciphertransf; 
-    };
+    },
     
   decode:(textDecode , offSets) => {
+    let decodetransf="";
     for(let i = 0; i < textDecode.length; i++) {
     //console.log (textCipher[i]);(posicion de las letras)
     let transformText= textDecode[i].charCodeAt();
@@ -28,4 +30,4 @@ window.cipher = {
     }
     return decodetransf; 
     }
-  };
+  }

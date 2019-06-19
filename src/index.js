@@ -13,37 +13,27 @@ offSets = document.getElementById("numberOffSet").value;
 console.log(offSets);
 }
 
-
-let ciphertransf= "";
-
 const btnEncode = document.getElementById("encrypted");
-btnEncode.addEventListener("click",()=>{
+btnEncode.addEventListener("click", ()=> {
   let textCipher;
   textCipher = document.getElementById("write").value.toUpperCase();
   offSets = parseInt(document.getElementById("numberOffSet").value);
   document.getElementById("answers").value = window.cipher.encode(textCipher, offSets);
-  ciphertransf= document.getElementById("answers").value;
-};
-
- 
-let decodetransf = "";
+})
 
 const btnDecode = document.getElementById("decoded");
-btnDecode.addEventListener("click",()=>{
+btnDecode.addEventListener("click", ()=> {
 let textDecode;
 textDecode= document.getElementById("write").value.toUpperCase();
 offSets = parseInt(document.getElementById("numberOffSet").value);
 document.getElementById("answers").value = window.cipher.decode(textDecode,offSets);
-decodetransf = document.getElementById("answers").value;
-}
-
-// Funcion decifrar
+})
 
 
 //limpiar pagina 
 const btnClear = document.getElementById("reset");
-btnClear.addEventListener("click", deletetext );
-function deletetext(){
+btnClear.addEventListener("click", deletetext);
+function deletetext() {
 document.getElementById("main").style.display="none";//invisible
 document.getElementById("secondary").style.display="block";//visible
 decodetransf="";
