@@ -1,15 +1,60 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+  <title>PrevienemeCesar</title>  
+</head>
+<body>
+  <div class=container></div>
+  <header>
+      <section id="main">
+        <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/022011/logo_angelus.png?itok=aaRGCD-U" class="logo">
+        <h1>Previeneme César</h1>
+        <h2> Innovación en los resultados de toma de muestras de sangre: Cifrado/Decifrado </h2>
+        <img  class= "photo"src="https://www.grupogamma.com/wp-content/uploads/2014/07/Laboratorio-1024x682.jpg" alt="">
+        <p id="intruction">Aptándose a las nuevas tecnologías, ha incorporado un nuevo sistema para los resultados de los examenes.</p> 
+        <h3> INSTRUCCIONES</h3>
+        <p>Favor colocar el identificador unico asignado. Luego aplique segun corresponda : <br>
+      -CIFRADO: Ingresar N° paciente , si es nuevo colocar 1 , escribir en el texto dia y hora (Con letras) y enviar al correo Examen@clinicaangelus.cl o al numero de la clinica, esperar confirmacion. <br>
+      -DECIFRADO: Ingrese con N°paciente y escriba el texto enviado a su correo electrionico y msje de celular segun corresponda.</p>  <br>
+        <label> Ingrese número de paciente:</label>
+        <input type="number" id="numberOffSet"placeholder="Escriba N°">
+        <button id="enter">Ingresar</button>
+      </section>
+      <section id="secondary"> 
+        <br>
+        <br>
+        <label>Ingrese su Codigo o texto: </label>
+          <input type="text" id="write" placeholder="Escriba identeficador único">
+          <button id="encrypted" type="button"> Codificar </button>
+          <button id="decoded" type="button" > Decodificar</button>
+         <br>
+         <br>
+         <br>
+        <label> Resultado </label>
+          <input type="text" id="answers">
+          <button id= "reset" > Limpiar </button>
+          <a href="index.html">Volver Pagina Incial</a>
+        </label>
+         <br>
+         <br>
+      </section>
+    </header>
+    <footer > 
+      <p>&copy; Clinica Angelus, 2019 <br>
+      Mesa Central:2 2730 12345 
+      Fono Reservas:2 2270 2700 <br>
+      Examen@clinicaangelus.cl
+     </p>
+     <img  class= "photo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzsBpsnNn9MSZXmVgUWKncCim-aIYVnMbLrmTU9CkN2JJTbRVNTQ" alt="">
+   </footer>
+   <script src="cipher.js"></script>
+   <script src="index.js"></script>
     </div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+</body>
 </html>
+ 

@@ -1,10 +1,16 @@
+// a quien quiero operar en este proyecto , "CIPHER"
 describe('cipher', () => {
-
+// It que voy a testear, primero global y despues por metodos
+//() lo que deberia devolver , y despies lo que voy a comparar   
   it('debería ser un objeto', () => {
+// assert es mi comparacion
     assert.equal(typeof cipher, 'object');
   });
+// al hacer mi testa deberia salimo que esto es un objeto 
+// NPN
 
-  describe('cipher.encode', () => {
+// . del objeto 
+describe('cipher.encode', () => {
 
     it('debería ser una función', () => {
       assert.equal(typeof cipher.encode, 'function');
@@ -23,3 +29,6 @@ describe('cipher', () => {
   });
 
 });
+
+
+VIEW
