@@ -10,21 +10,22 @@ function intoOffSet(){
 document.getElementById("main").style.display="none";//invisible
 document.getElementById("secondary").style.display="block";//visible
 offSets = document.getElementById("numberOffSet").value;
-console.log(offSets);
+//console.log(offSets);
 }
 
 const btnEncode = document.getElementById("encrypted");
 btnEncode.addEventListener("click", ()=> {
-  let textCipher;
-  textCipher = document.getElementById("write").value.toUpperCase();
-  offSets = parseInt(document.getElementById("numberOffSet").value);
-  document.getElementById("answers").value = window.cipher.encode(textCipher, offSets);
+let textCipher;
+textCipher = document.getElementById("write").value;
+//console.log("Valor de textCipher: " + textCipher);
+offSets = parseInt(document.getElementById("numberOffSet").value);
+document.getElementById("answers").value = window.cipher.encode(textCipher, offSets);
 })
 
 const btnDecode = document.getElementById("decoded");
 btnDecode.addEventListener("click", ()=> {
 let textDecode;
-textDecode= document.getElementById("write").value.toUpperCase();
+textDecode= document.getElementById("write").value;
 offSets = parseInt(document.getElementById("numberOffSet").value);
 document.getElementById("answers").value = window.cipher.decode(textDecode,offSets);
 })
@@ -36,8 +37,6 @@ btnClear.addEventListener("click", deletetext);
 function deletetext() {
 document.getElementById("main").style.display="none";//invisible
 document.getElementById("secondary").style.display="block";//visible
-decodetransf="";
-ciphertransf="";
 document.getElementById("write").value="";
 document.getElementById("answers").value="";
 }
