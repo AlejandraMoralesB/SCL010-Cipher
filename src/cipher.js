@@ -15,13 +15,13 @@ window.cipher = {
       //espacio 
       else if(transformText >= 32 && transformText <=  32) {
      ecuation=(transformText- 32 + offSets) % 1 + 32;
-    }
+      }
       // Cifrado con minúsculas.
       else if( transformText >= 97 && transformText <= 122) {
       //console.log("minúsculas");
       ecuation=(transformText - 97 + offSets) % 26 + 97;
       }
-        // Cifrado con números.
+      // Cifrado con números.
       else if (transformText >= 48 && transformText<= 57) {
       //console.log("números");
       ecuation=(transformText - 48 + offSets) % 10 + 48; 
@@ -41,7 +41,7 @@ window.cipher = {
     //console.log (textCipher[i]);(posicion de las letras)
      let transformText= textDecode[i].charCodeAt();
     //console.log(transformText);
-     //codigo Mayuscula
+    //codigo Mayuscula
      if (transformText >= 65 && transformText <= 90) {
     //console.log("codigo Mayuscula");
     ecuation=(transformText - 90 -offSets) % 26 + 90;}
@@ -58,7 +58,7 @@ window.cipher = {
      ecuation=(transformText - 57 - offSets) % 10 + 57;}
     //console.log(ecuation);
     let transforAscii1= String.fromCharCode(ecuation);
-    //console.log(transforAscii); 
+    //console.log(transforAscii1); 
     decodetransf+=transforAscii1;
     //console.log(decodetransf);
     }

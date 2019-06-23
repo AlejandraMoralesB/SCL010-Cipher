@@ -9,45 +9,44 @@
   <title>AlertameCesar</title>  
  </head>
  <body>
-  <div class="container">
+  <div  id="container">
   <header>
    <section id="main">
-        <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/022011/logo_angelus.png?itok=aaRGCD-U" id="logo">
-        <h1>Alértame César</h1>
-        <h2> Innovación en los resultados de toma de muestras de sangre: Cifrado/Descifrado</h2>
-        <img  class="photo" src="https://www.grupogamma.com/wp-content/uploads/2014/07/Laboratorio-1024x682.jpg">
-        <p>Adaptándose a las nuevas tecnologías, ha incorporado un nuevo sistema para los resultados y toma de día, fecha y hora del examen.</p> 
-        <label> Ingrese identificador único asignado(Nuevos usuarios ingrese 1): </label>
-        <input type="number" id="numberOffSet" placeholder="Escriba N°" size="8px" >
-        <button id="enter">Ingresar</button>
+     <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/022011/logo_angelus.png?itok=aaRGCD-U" id="logo">
+      <h1>Alértame César</h1>
+      <h2> Innovación en los resultados de toma de muestras de sangre: Cifrado/Descifrado</h2>
+      <img  class="photo" src="https://www.grupogamma.com/wp-content/uploads/2014/07/Laboratorio-1024x682.jpg">
+      <p> <br> <br> <br> Adaptándose a las nuevas tecnologías, ha incorporado un nuevo sistema para los resultados y toma de día, fecha y hora del examen.</p> 
+      <label> N° paciente (Nuevos ingrese 1): </label>
+      <input type="number" id="numberOffSet" placeholder="1,2,3....">
+      <button id="enter">Ingresar</button>
    </section>
-      <section id="secondary"> 
-          <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/022011/logo_angelus.png?itok=aaRGCD-U" id="logo 2">
-        <h3>  Cifrar / Descifrar🔒( Ingrese texto sin espacio) </h3>
-        <br>
-        <label>Ingrese su Código o texto: </label>
-          <input type="text" id="write" placeholder="Escriba texto a Cifrar/Decifar"  size="15" >
-          <button id="encrypted" type="button"> Codificar </button>
-          <button id="decoded" type="button" > Decodificar</button>
+    <section id="secondary"> 
+      <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/022011/logo_angelus.png?itok=aaRGCD-U" id="logo2">
+      <h3>  Cifrar / Descifrar🔒</h3>
+      <br>
+      <label>Ingrese su Identificador Unico: </label>
+      <input type="text" id="write" placeholder="Escriba texto a Cifrar/Decifar">
+       <button id="encrypted" type="button"> Codificar </button>
+       <button id="decoded" type="button" > Decodificar</button>
+      <br>
+      <label> Su cifrado/ descifrado es : </label>
+       <input type="text" id="answers" placeholder="Cifrar/Descifar">
+       <button id= "reset" > Limpiar </button>
+       <a href="index.html"> Volver Página Inicial</a> <br>
+        <ul>
+         <li> En el caso de cifrar enviar resultado al correo Examen@clinicaangelus.cl o mensaje de texto a +56982345678 , según corresponda indicando iniciales, dia-mes y hora estimativa. Ej: AM 23/07 8AM . Esperar confirmación.</li>
+       </ul>
          <br>
-        <label> Su cifrado/ descifrado es : </label>
-          <input type="text" id="answers" placeholder="Cifrar/Descifar">
-          <button id= "reset" > Limpiar </button>
-          <a href="index.html"> Volver Página Inicial</a>
-         <br>
-         <ul>
-           <li> En el caso de cifrar enviar resultado al correo Examen@clinicaangelus.cl o mensaje de texto a +56982345678 , según corresponda indicando iniciales, fecha y hora. Esperar confirmación.</li>
-         </ul>
-         <br>
-      </section>
-    </header>
-    <footer> 
+    </section>
+  </header>
+   <footer> 
       <p id="footer"> &copy; Clínica Angelus,2019 <br>
-      Mesa Central:2 2730 12345 
-      Fono Reservas: +56982345678 <br>
+      Mesa Central: 2 2730 12345 / 
+      Fono Reservas:+56982345678 <br>
       Examen@clinicaangelus.cl
      </p>
-     <img  id= "photo1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzsBpsnNn9MSZXmVgUWKncCim-aIYVnMbLrmTU9CkN2JJTbRVNTQ" alt="">
+     <img  id= "photo1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzsBpsnNn9MSZXmVgUWKncCim-aIYVnMbLrmTU9CkN2JJTbRVNTQ" >
    </footer>
    <script src="cipher.js"></script>
    <script src="index.js"></script>
