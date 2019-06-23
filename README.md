@@ -1,8 +1,8 @@
-#"Alértame Cesar" 💉
+# "Alértame Cesar" 💉
 
-##Definición Del Producto📖
+## Definición Del Producto📖
 
-###Contexto y Objetivo
+### Contexto y Objetivo
 
 Chile  según el informe de OnuSida conocido el año pasado se convirtió en uno de los diez países donde más han aumentado los casos de VIH, posicionándolo a la par de países como Egipto, Madagascar, Macedonia, Filipinas, entre otros.
 Por esto es imprescindible crear un servicio adicional para la  Clínica Angelus."Alértame Cesar" es una aplicación web orientada al cifrado y descifrado de información de carácter clínico, específicamente en la toma de muestras de sangre para el examen de VIH, ayuda a que el resultado sea lo  más expedito posible generando que las usuarios se lo realicen con más  frecuencia, ya que  gracias a este servicio se optimiza el tiempo,  se genera confiabilidad  y la vez refuerza las estrategias de prevención y diagnóstico en la materia.
@@ -23,9 +23,9 @@ La palabra CASA se cifra como FDVD.
 Alfabeto sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
 
-##Diseño Experiencia Usuario⚙️  ️
+## Diseño Experiencia Usuario⚙️  ️
 
-###Control de Flujo y Sketching
+### Control de Flujo y Sketching
 
 ![flujo](flujo.jpg)  
 
